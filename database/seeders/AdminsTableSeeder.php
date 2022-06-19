@@ -24,7 +24,8 @@ class AdminsTableSeeder extends Seeder
             'password' => bcrypt('secret'),
             'created_at'=>now(),
             'updated_at'=>now(),
-            'remember_token'=>Str::random(10),
+            //'remember_token'=>Str::random(10),
+            'remember_token'=>hash('sha256', 'N7fp6GTjO9CJD1QIhqv0Ty1ZZbJeS3tFIbToFJZQ'),
             ),
             array(
             'name' => "lana",
@@ -32,7 +33,8 @@ class AdminsTableSeeder extends Seeder
             'password' => bcrypt('secret'),
             'created_at'=>now(),
             'updated_at'=>now(),
-            'remember_token'=>Str::random(10),
+            //'remember_token'=>Str::random(10),
+            'remember_token'=>hash('sha256', 'N7fp6GTjO9CJD1QIhqv0Ty1ZZbJeS3tFIbToFJZQ'),
             )
             ));
     }
